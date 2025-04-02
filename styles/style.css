@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh; /* Garantiza que siempre tenga al menos el alto de la pantalla */
+    background-color: whitesmoke;
+    color: white;
+    /*background-image: url("../assets/img/1.jpeg");*/
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+}
+
+
+.iconos-tools{
+    display: flex; /* Alinea los íconos en fila */
+    justify-content: center; /* Centra los íconos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 15px; /* Espaciado entre íconos */
+    flex-wrap: wrap; /* Permite que se acomoden si no caben en la pantalla */
+    padding: 20px;
+}
+
+.icono img {
+    width: 50px; /* Tamaño uniforme */
+    height: auto; /* Mantiene la proporción */
+    transition: transform 0.3s ease-in-out; /* Efecto al pasar el mouse */
+}
+
+.icono img:hover {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease-in-out;
+
+}
+
+
+.herramientas{
+    background-color: lightgrey;
+    border: 15px solid ;
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.titulo-tools{
+    font-size: 2rem;
+    text-align: center;
+    color: #57B4BA;
+}
+
+.titulo-tools a{
+    text-decoration: none;
+
+}
+
+.image-encabezado{
+    width: 100%;    
+
+}
+
+
+.enlaces{
+    display: flex; /* Alinea los íconos en fila */
+    justify-content: space-between; /* Centra los íconos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 30px; /* Aumenta el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que se acomoden si no caben en la pantalla */
+    padding: 20px;
+
+}
+
+.enlaces a{
+    padding: 10px 20px;
+    background-color: #8B5DFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;   
+    margin-bottom: 10px; /* Espacio entre elementos */
+
+}
+
+
+.enlaces a:hover {
+
+    background-color: #98c2e6 ;
+}
+
+
+/*efectos*//*efectos*//*efectos*//*efectos*/
+
+
+  .section3{
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  
+
+/* CONTENEDOR CON ELEMENTOS CENTRADOS*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; /* Centrar el contenedor */
+    gap: 10px; /* Espaciado uniforme */
+    width: 90%; /* Para que no ocupe toda la pantalla */
+    padding: 20px;
+    
+
+  }
+.contenedor-titulo-galeria{
+    background-color: lightgrey;
+    border: 15px solid ;
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+  .item1 {
+    background-color: #f1f1f1;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+  
+  .item2 {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Asegura alineación vertical */
+    overflow: hidden; /* Evita que se desborde */
+    width: 100%;
+  }
+
+
+.section2{
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #98c2e6 60%, #d859a1 40%); /* Degradado de fondo */
+    color: white;
+    text-align: center;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; /* Evita que se desborde */
+
+}
+
+.video-container img{
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacios extra */
+
+}
+
+/*ubicacion de imagenes*/
+.images-centradas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+}
+
+/* Ajusta el tamaño sin expandirse demasiado */
+/* Mantiene la proporción */
+.image-container img {
+    max-width: 250px; 
+    height: auto; 
+    display: block;
+
+}
+.image-container-perfil {
+    max-width: 250px; /* Ajusta el tamaño sin expandirse demasiado */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    filter: grayscale();
+    border-radius: 10%;
+}
+
+.saludo{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.imagen-encabezado{
+    max-width: 250px; /* Ajusta el tamaño sin expandirse demasiado */
+
+}
+
+/* Contenedor principal */
+.herramientas {
+    width: 90%; /* Evita márgenes excesivos en pantallas pequeñas */
+    max-width: 1200px; /* Controla el ancho máximo en pantallas grandes */
+    margin: 5% auto; /* Centra el contenedor con menos margen */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea mejor en pantallas pequeñas */
+    flex-wrap: wrap;
+    gap: 20px; /* Añade espacio entre elementos */
+}
+
+
+
+.titulo-destaque{
+    color: #8B5DFF;
+
+}
+.text-container h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.text-container h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    color: white  ;
+    background-color: #57B4BA;
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.brief {
+    font-size: 1.2em;
+    color: white  ;
+    background-color: rgb(0 0 0 /30%);
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .text-container h1 {
+        font-size: 2em;
+    }
+
+    .text-container h2 {
+        font-size: 1.8em;
+    }
+
+    .text-container p, .text-container a {
+        font-size: 1em;
+    }
+    
+}
+
+.section4{
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+
+  }
+
+  
+
+.contenedor-taller{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea mejor en pantallas pequeñas */
+}
+
+
+.image-container-road{
+    width: 80%;
+    height: 100vh;
+    padding: 40px;
+}
+
+.parrafo{
+    font-size: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+
+.galeria div{
+    margin: 10px;
+}
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    color: #57B4BA;
+    margin-top: 20px;
+    
+ 
+}
+
+.review-card:hover{
+    background-color: ghostwhite;
+}
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.stars {
+    color: gold;
+    margin: 10px 0;
+}
+.review-text {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.inscripcion{
+    display: flex; /* Alinea los íconos en fila */
+    justify-content: space-between; /* Centra los íconos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 30px; /* Aumenta el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que se acomoden si no caben en la pantalla */
+    padding: 20px;
+}
+
+.alinear-centro{
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center;
+}
+
+
+  /* Contenedor del carrusel */
+  .carousel-container {
+    width: 80%;
+    max-width: 800px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
+    scroll-behavior: smooth;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll en Chrome */
+}
+
+/* Imágenes dentro del carrusel */
+.carousel-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Indicadores de posición */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: gray;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+/* Usa `target` para cambiar el color de los indicadores */
+#slide1:target ~ .carousel-indicators .indicator:nth-child(1),
+#slide2:target ~ .carousel-indicators .indicator:nth-child(2),
+#slide3:target ~ .carousel-indicators .indicator:nth-child(3) {
+    background: #ff9800;
+}
+
+/* Flechas de navegación */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-nav a {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.carousel-nav a:hover {
+    background: #e68900;
+}
+
+.titulos{
+    color: #57B4BA ;
+}
+
+
+
+mark {
+    background: #57B4BA;
+    border-radius: 5px;
+    color: white;
+    
+}

@@ -1,0 +1,8 @@
+/* Contenedor principal */
+.herramientas {
+    margin: 10% 15%;  /* Agrega un margen del 10% arriba y abajo, y del 15% a los lados */
+    display: flex;  /* Activa Flexbox para organizar los elementos internos */
+    align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+    justify-content: space-between;  /* Distribuye los elementos dejando el mismo espacio entre ellos */
+    flex-wrap: wrap;  /* Permite que los elementos se acomoden en varias líneas si no caben en una sola */
+}

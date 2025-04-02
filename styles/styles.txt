@@ -1,0 +1,110 @@
+.presentacion {
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Evita que sea demasiado grande en pantallas grandes */
+    margin: 0 auto; /* Centra horizontalmente sin perder espacio */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px; /* Espaciado interno en lugar de márgenes grandes */
+    box-sizing: border-box; /* Evita que padding afecte el ancho */
+}
+
+
+
+
+/* Contenido de presentación */
+.presentacion__contenido {
+    width: 50%;  /* Ocupa la mitad del ancho disponible del contenedor padre */
+    display: flex;  /* Usa Flexbox para organizar los elementos internos */
+    flex-direction: column;  /* Acomoda los elementos en una columna (uno debajo del otro) */
+    gap: 40px;  /* Agrega un espacio de 40px entre cada elemento hijo */
+
+    background-color: rgb(0 0 0 / 50%);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-top: 20px;
+
+}
+
+
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+
+}
+
+.presentacion__contenido__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+
+/* Estilos de la imagen */
+.imagen-principal {
+    width: 50%; /* Ocupa la mitad del ancho disponible */
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .presentacion__contenido,
+    .imagen {
+        width: 100%;
+        max-width: 100%; /* Evita que se salga del ancho del contenedor */
+    }
+
+    .imagen {
+        display: none; /* Si realmente quieres ocultarla en móviles */
+    }
+}
+
+
+
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.presentacion__enlaces__link{
+      /* background-color: #22D4FD; */
+      border: 2px solid #22D4FD;
+      width: 378px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: #F6F6F6;
+      font-family: 'Montserrat', sans-serif;
+}
+
+
