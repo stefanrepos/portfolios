@@ -454,7 +454,10 @@ body {
     color: #57B4BA ;
 }
 
-
+.parrafoNormal{
+    color: #000000;
+    font-size: 0.8em;
+}
 
 mark {
     background: #57B4BA;
@@ -462,3 +465,50 @@ mark {
     color: white;
     
 }
+
+
+
+ /* ============ BANNER======= */
+ .banner {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+.banner:hover {
+    transform: scale(1.05);
+}
+.titulo {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #fff, 0 0 20px #00bfff; }
+    100% { text-shadow: 0 0 20px #fff, 0 0 30px #00bfff; }
+}
+.enlaceGit {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #ff5722;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.enlaceGit:hover {
+    background: #e64a19;
+}
+.info {
+    margin-top: 10px;
+    font-size: 1em;
+    opacity: 0.8;
+} 
