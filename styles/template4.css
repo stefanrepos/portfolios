@@ -1,0 +1,182 @@
+/* Reset rápido */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+/* Botón de menú (solo visible en mobile) */
+.menu-btn {
+  font-size: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  background: #222;
+  color: #eee;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+}
+/* Sidebar oculto por defecto */
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 150;
+}
+
+.sidenav nav ul {
+  margin-top: 80px;
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav nav ul li {
+  margin: 1rem 0;
+}
+
+
+.sidenav nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.sidenav nav ul li a:hover {
+  color: red;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+i{
+  font-size: 1.5rem;
+}
+/* Mostrar sidenav si el checkbox está activo */
+#toggleMenu:checked + .menu-btn + .contenedor .sidenav {
+  transform: translateX(0);
+}
+/* Contenedor general */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+    flex: 1; /* <- importante si section tiene 100vh */
+
+  box-sizing: border-box;
+}
+/* Main con algo de padding */
+.contenedor-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(187, 191, 195);
+}
+.contenedor-visual {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.contenido {
+  width: 100%;
+  min-height: 640px; /* <- no excede el contenedor visual */
+  overflow-y: auto;  /* <- si el contenido crece, aparece scroll */
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.theme-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  gap: 1rem;
+}
+
+.theme-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+/* aca se controla los colores del contenido */
+/* Tema claro (por defecto) este es el selector que cambia el estado */
+#toggleTheme ~ .contenido {
+  background: #e5e5e5;
+  color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Tema oscuro */
+#toggleTheme:checked ~ .contenido {
+  background: #fb7f7ff0;
+  color: #111;
+}
+
+
+/* Vista desktop */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .sidenav {
+    transform: translateX(0);
+    position: static;
+    width: 220px;
+    height: auto;
+  }
+
+  .contenedor {
+    flex-direction: row;
+  }
+
+  .contenedor-main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   
+  }
+.contenedor-visual{
+  margin-top: 0;
+  background-color: beige;
+  height: 760px;
+  gap: 1rem;
+  padding: 1rem;
+}
+.contenido{
+min-height: 800px; /* <- no excede el contenedor visual */
+width: 100%;
+gap: 1rem;
+}
+}
+
+

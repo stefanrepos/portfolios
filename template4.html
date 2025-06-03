@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./template4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+
+        <input type="checkbox" id="toggleMenu" hidden>
+        <label for="toggleMenu" class="menu-btn"><i class="fas fa-bars"></i></label>
+
+
+        <div class="contenedor">
+            <aside class="sidenav">
+                <nav>
+                    <ul>
+                        <li><i class="fas fa-home"></i><a href="#">Inicio</a></li>
+                        <li><i class="fas fa-user-plus"></i><a href="#">Perfil</a></li>
+                        <li><i class="fas fa-user-cog"></i><a href="#">Ajustes</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="contenedor-main">
+                <div class="contenedor-visual">
+
+                    <!-- Toggle del tema se debe ejecutar antes de cargar el dom-->
+                    <input type="checkbox" id="toggleTheme" hidden>
+                    <label for="toggleTheme" class="theme-btn">Cambiar tema</label>
+
+                    <div class="contenido">                        
+                        <h1>Contenido principal</h1>
+                        <p>Este contenido cambia de color sin usar JavaScript.</p>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
