@@ -543,3 +543,41 @@ summary {
     font-size: 1em;
     opacity: 0.8;
 } 
+
+
+.contenedor-prototipos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.prototipo {
+  flex: 1 1 45%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.prototipo .banner {
+  margin-bottom: 1rem;
+}
+
+.vistaprevia img,
+.vistaprevia video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .prototipo {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
