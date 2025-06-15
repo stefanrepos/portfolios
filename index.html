@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/blog.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -306,31 +307,138 @@
 </section>
 
 
-<section class="section4">
-<div class="titulos" id="blog">
-<h1 class="encabezado">¿Qué es el código abierto?</h1> <br>
 
-<div>
-<img src="https://i.postimg.cc/tTzvqcKx/1-Introduccion.png" alt=""
-style="width: 100%; max-width: 800px; height: auto;">
-</div>
-<br>
-<div>
-<img src="https://i.postimg.cc/3NSLpvJr/2-Ventajas-y-Usos.png" alt=""
-style="width: 100%; max-width: 800px; height: auto;">
-</div>
-<div>
-<img src="https://i.postimg.cc/4dGFTGSG/3-Codigo-Abierto.png" alt=""
-style="width: 100%; max-width: 800px; height: auto;">
-</div>
-<div>
-<img src="https://i.postimg.cc/5yN763Jk/4-Conclusion.png" alt=""
-style="width: 100%; max-width: 800px; height: auto;">
-</div>
 
-</div>
+<section class="blog-section">
+  <div class="blog-container">
+
+    <!-- Panel lateral izquierdo (puede ser índice, menú, etc.) -->
+    <aside class="sidebar left-panel">
+      <h3>Temas</h3>
+      <ul>
+        <li><a href="#intro">Introducción</a></li>
+        <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#concepto">Código Abierto</a></li>
+        <li><a href="#conclusion">Conclusión</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal del blog -->
+    <article class="blog-content">
+      <h1 id="intro">¿Qué es el código abierto?</h1>
+      <p>El <strong>código abierto</strong> representa una filosofía y práctica de desarrollo de software basada en la colaboración y la transparencia. Permite a cualquier persona ver, modificar y distribuir el código fuente.</p>
+
+      <img src="https://i.postimg.cc/tTzvqcKx/1-Introduccion.png" alt="Introducción">
+
+      <h2 id="ventajas">Ventajas y Usos del Código Abierto</h2>
+      <p>Las soluciones open source ofrecen <em>flexibilidad, ahorro de costos y comunidad activa</em>. Desde sistemas operativos como Linux hasta herramientas como Git, su adopción es masiva.</p>
+
+      <img src="https://i.postimg.cc/3NSLpvJr/2-Ventajas-y-Usos.png" alt="Ventajas y usos">
+
+      <h2 id="concepto">¿Por qué elegir el código abierto?</h2>
+      <blockquote>
+        “El software libre es una cuestión de libertad, no de precio.” – Richard Stallman
+      </blockquote>
+      <p>Adoptar código abierto impulsa la innovación y el aprendizaje colectivo, permitiendo adaptaciones y mejoras sin restricciones.</p>
+
+      <img src="https://i.postimg.cc/4dGFTGSG/3-Codigo-Abierto.png" alt="Código abierto">
+
+      <h2 id="conclusion">Conclusión</h2>
+      <p>El futuro del desarrollo tecnológico depende de la apertura. Contribuir a proyectos open source es invertir en un ecosistema más justo, accesible y sostenible.</p>
+
+      <img src="https://i.postimg.cc/5yN763Jk/4-Conclusion.png" alt="Conclusión">
+
+      <section class="comentarios-blog">
+  <h3>¿Qué opinas de este artículo?</h3>
+  <form>
+    <label for="feedback">Tu comentario:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="Escribe aquí tus ideas, dudas o aportes..."></textarea><br>
+    <button type="submit">Enviar comentario</button>
+  </form>
 </section>
 
+    </article>
+    
+<!-- Panel lateral derecho: Información del autor -->
+<aside class="sidebar right-panel">
+
+
+    <div class="autor-info">
+  <img src="https://i.postimg.cc/fTzvZfHK/avatar-autor.png" alt="Foto del autor" class="">
+  <div class="autor-detalles">
+    <h3 class="autor-nombre">Stefan R.</h3>
+    <span class="autor-handle">@stefanrepos</span>
+    <p>No empecé escribiendo código, sino resolviendo problemas que se presentan en producción. Poco a poco, entendí que detrás de cada sistema hay decisiones, personas, procesos y, sobre todo, oportunidades de mejora.</p>
+    <p>Hoy, como administradora de aplicaciones software, trabajo entre lo técnico y lo funcional. Me interesa automatizar tareas repetitivas y crear soluciones más humanas.</p>
+    <blockquote>"Cada sistema cuenta una historia de su desarrollo"</blockquote>
+    
+
+
+    <a href="https://github.com/stefanrepos" target="_blank" class="boton-explorar">Explorar herramientas</a>
+  </div>
+</div>
+
+
+<div class="nota-tecnica">
+  <h4>Nota técnica</h4>
+  <p>El término <strong>"código abierto"</strong> no implica necesariamente que sea libre de restricciones. Las <strong>licencias</strong> determinan cómo puede usarse, modificarse y distribuirse un software.</p>
+  <br>
+  <p>Según el informe de GitHub <a href="https://octoverse.github.com/" target="_blank">Octoverse</a>, más del 90% de los proyectos open source activos usan alguna licencia permisiva, como:</p><br>
+  <ul>
+    <li><strong><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></strong> – Muy utilizada por su flexibilidad.</li>
+    <li><strong><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPLv3</a></strong> – Asegura que las mejoras sigan siendo libres.</li>
+    <li><strong><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a></strong> – Popular en proyectos corporativos por su claridad legal.</li>
+  </ul>
+  <p>Comprender las licencias es clave para reutilizar software de forma legal y ética.</p>
+</div>
+
+<div class="nota-tecnica">
+  <h4>Nota técnica</h4>
+  <p>Muchas herramientas de uso diario tienen versiones open source potentes y profesionales. Algunos ejemplos que puedes usar en tu entorno de trabajo:</p><br>
+  <ul>
+    <li>
+      <strong><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a></strong> – Alternativa completa a Microsoft Office para documentos, hojas de cálculo y presentaciones.
+    </li>
+    <li>
+      <strong><a href="https://www.gimp.org/" target="_blank">GIMP</a></strong> – Editor de imágenes avanzado similar a Photoshop, ideal para diseño y retoque digital.
+    </li>
+    <li>
+      <strong><a href="https://code.visualstudio.com/" target="_blank">VS Code</a></strong> – Editor de código muy popular, construido sobre el proyecto open source de Microsoft.
+    </li>
+    <li>
+      <strong><a href="https://obsproject.com/" target="_blank">OBS Studio</a></strong> – Software de grabación de pantalla y transmisión en vivo, usado por creadores y educadores.
+    </li>
+    <li>
+      <strong><a href="https://nextcloud.com/" target="_blank">Nextcloud</a></strong> – Plataforma privada tipo Google Drive para compartir archivos y colaborar de forma segura.
+    </li>
+  </ul>
+</div>
+
+
+<div class="nota-tecnica">
+  <h4>Nota técnica</h4>
+  <p>El código abierto no se sostiene solo: requiere comunidad, documentación y mantenimiento activo. Contribuir con tiempo, ideas o reportes de errores fortalece estos proyectos y evita su abandono.</p>
+  <p>Algunas comunidades activas que puedes explorar:</p>
+  <ul>
+    <li>
+      <strong><a href="https://discuss.python.org/" target="_blank">Python Community</a></strong> – Espacio oficial para debatir y mejorar el ecosistema de Python.
+    </li>
+    <li>
+      <strong><a href="https://opensource.microsoft.com/" target="_blank">Open Source @ Microsoft</a></strong> – Iniciativas abiertas impulsadas por Microsoft, como VS Code y TypeScript.
+    </li>
+    <li>
+      <strong><a href="https://gitlab.com/gitlab-org/gitlab/-/issues" target="_blank">GitLab Community</a></strong> – Participa en el desarrollo de GitLab, revisa issues y aporta ideas.
+    </li>
+  </ul>
+</div>
+
+
+</aside>
+
+
+
+  </div>
+</section>
 
 <footer>
 
